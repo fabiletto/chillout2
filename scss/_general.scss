@@ -1,0 +1,282 @@
+
+
+    body{
+        color: $color-body;
+        background-image: linear-gradient(to top left , #8e9eab, #eef2f3) ;
+        h1 {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            font-size: $tam-fuentes;
+            background-image: linear-gradient(to top, #00467f, #a5cc82);
+          }
+          
+          h2 {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+            font-size: $tam-fuentes;
+            background-image: linear-gradient(to top, #00467f, #a5cc82);
+            font-size: 40px;
+            text-decoration: underline;
+          }
+          
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $tam-fuentes2;
+    color: $color-h;
+    text-decoration: overline underline;
+  }
+  h5 {
+    color: $color-h5;
+  }
+  p {
+    color:$color-fuentes;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $tam-fuentes3;
+  }
+    }
+
+    main{
+        background-color: $color-main;
+        overflow: hidden;
+    }
+
+  
+  .nosotros2{
+    font-size: $tam-fuentes3;
+    color: white;
+    border: 10px white;
+    border-style: double;
+    background-image: linear-gradient(to top left , #485563, #29323c) ;
+    
+} 
+  footer{
+    font-size: $tam-fuentes4;
+    color: $color-h;
+    background-color: grey;
+}
+.grid {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado encabezado" "main main main main " "sectionA sectionB sectionB aside " "sectionC sectionC sectionC sectionC" "footer footer footer footer ";
+  }
+  
+  header {
+    grid-area: encabezado;
+  }
+  
+  main {
+    background-image: linear-gradient(to top left, #8e9eab, #eef2f3);
+    grid-area: main;
+  }
+  
+  .sectionA {
+    background-image: linear-gradient(to top, #bbd2c5, #536976);
+    grid-area: sectionA;
+    border: 10px rgb(182, 177, 177) double;
+  }
+  
+  .sectionB {
+    background-image: linear-gradient(to top, #bbd2c5, #536976);
+    grid-area: sectionB;
+    border: 10px rgb(182, 177, 177) double;
+  }
+  
+  .sectionC {
+    background-image: linear-gradient(to top, #8e9eab, #eef2f3);
+    grid-area: sectionC;
+    border: 10px;
+    border-radius: 10px;
+  }
+  
+  aside {
+    grid-area: aside;
+    background-image: linear-gradient(to top left, #eecda3, #ef629f);
+    border: 10px #ffd0ef double;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-image: linear-gradient(to top left, #c9ffbf, #ffafbd);
+  }
+  
+  .grid2 {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado" "main main main" "sectionD sectionE sectionF" "box box box" "footer footer footer";
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+  
+  header {
+    grid-area: encabezado;
+  }
+  
+  main {
+    grid-area: main;
+    overflow-x: hidden;
+  }
+  
+  .sectionD {
+    grid-area: sectionD;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-image: linear-gradient(to top left, #efefbb, #d4d3dd);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .sectionE {
+    grid-area: sectionE;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-image: linear-gradient(to top left, #efefbb, #d4d3dd);
+    margin-left: 10px;
+  }
+  
+  .sectionF {
+    grid-area: sectionF;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-image: linear-gradient(to top left, #efefbb, #d4d3dd);
+    margin-right: 10px;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  .box {
+    grid-area: box;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .grid3 {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado encabezado" "main main main main" "main main main main" "footer footer footer footer";
+  }
+  
+  header {
+    grid-area: encabezado;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  .grid4 {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado encabezado" "main main main main" "main main main main" "footer footer footer footer";
+  }
+  
+  header {
+    grid-area: encabezado;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  .grid5 {
+    display: grid;
+    grid-template-areas: "encabezado encabezado encabezado encabezado" "main main main main" "main main main main" "footer footer footer footer";
+  }
+  
+  header {
+    grid-area: encabezado;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+
+    grid-area: footer;
+  }
+
+ /* escritorio */
+ @media (min-width: 1101px) {
+    .grid {
+      display: grid;
+      grid-template-areas: "encabezado encabezado" "main main" "sectionA sectionB" "sectionC aside" "footer footer";
+    }
+  
+    .grid2 {
+      display: grid;
+      grid-template-areas: "encabezado encabezado" "main main" "sectionD sectionD"   "sectionE sectionF"  "box box"  "box box" "footer footer";
+    }
+  
+    .grid3, .grid4 {
+      display: grid;
+      grid-template-areas: "encabezado encabezado encabezado" "main main main" "main main main" "footer footer footer";
+    }
+  
+    .grid5 {
+      display: grid;
+      grid-template-areas: "encabezado encabezado encabezado" "main main main" "main main main" "main main main" "footer footer footer";
+    }
+  }
+
+
+   /* tableta */
+  @media (min-width: 700px) and (max-width: 1100px) {
+    .container {
+   display: none;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-areas: "encabezado encabezado" "main main" "sectionA sectionB" "sectionC aside" "footer footer";
+    }
+  
+    .grid2 {
+      display: grid;
+      grid-template-areas: "encabezado encabezado" "main main" "sectionD sectionD"   "sectionE sectionF"  "box box"  "box box" "footer footer";
+    }
+  
+    .grid3, .grid4 {
+      display: grid;
+      grid-template-areas: "encabezado encabezado encabezado" "main main main" "main main main" "footer footer footer";
+    }
+  
+    .grid5 {
+      display: grid;
+      grid-template-areas: "encabezado encabezado encabezado" "main main main" "main main main" "main main main" "footer footer footer";
+    }
+  }
+  
+  /* movil */
+  
+  @media (min-width: 350px) and (max-width: 699px) {
+    .container {
+      margin: auto;
+      display: none;
+    }
+  
+    .grid {
+      display: grid;
+      grid-template-areas: "encabezado" "main " "sectionA" "sectionB " " aside" "sectionC" "footer";
+    }
+  
+    .grid2 {
+      display: grid;
+      grid-template-areas: "encabezado" "main" "sectionD" "sectionE" "sectionF" "box " "footer";
+    }
+  
+    .grid3, .grid4 {
+      display: grid;
+      grid-template-areas: "encabezado " "main" "main" "footer";
+    }
+  
+    .grid5 {
+      display: grid;
+      grid-template-areas: "encabezado" "main" "main" "main" "footer";
+    }
+  }

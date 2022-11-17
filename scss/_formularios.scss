@@ -1,0 +1,13 @@
+.box {
+    border: 15px black;
+    padding-top: 30px;
+    padding-left: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top left, #809bbd, #59626d);
+    box-shadow: 5px 5px 8px 8px black;
+    input, select, option {
+        box-shadow: 3px 3px 3px 3px black;
+      }
+  }
+  
+  
